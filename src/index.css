@@ -36,13 +36,7 @@
     width: 13%;
 }
 .burger{
-   
-}
-.burger div{
-    width: 25px;
-    height: 4px;
-    margin: 5px;
-    background-color:black;
+   display: none;
 }
 @media screen and (max-width:768px) {
     .list{
@@ -55,4 +49,7 @@
         align-items: center;
         width: 20%;
     }
+    .burger{
+      display: inline;
+     }
 }
