@@ -1,13 +1,13 @@
 import React from "react";
 import img from "/home/stephen/ecommerce-product-page-main/src/image-avatar.png";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import MenuIcon from '@mui/icons-material/Menu';
 import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
       <div className="burger">
-        <HorizontalSplitIcon />
+        <MenuIcon />
       </div>
 
       <div className="header_optionOne">
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header_optionTwo">
-        <AddShoppingCartIcon />
+        <ShoppingCartIcon />
         <img className="header_img" src={img} alt="" />
       </div>
     </div>

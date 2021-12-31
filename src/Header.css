@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 70%;
+  margin: auto;
+  border-bottom:1px solid rgb(211, 195, 195) ;
 }
 .logo {
   font-size: 30px;
@@ -31,7 +34,14 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .list {
+    .header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+    }
+ 
+    .list {
     display: flex;
     position: absolute;
     left: 0px;
