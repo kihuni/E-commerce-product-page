@@ -21,8 +21,8 @@ const[list, setList] = useState(false)
       <div className="header_optionOne">
         <div className="logo">Sneakers</div>
         <div className={list ? 'nav-menu.active': 'nav-menu' }>
-          <Link className="menu-bars">
-          <CloseIcon className ="close" />
+          <Link className="menu-bars"  onClick = {showlist}>
+          <CloseIcon  />
           </Link>
          {SidebarData.map((item, index) =>{
            return(

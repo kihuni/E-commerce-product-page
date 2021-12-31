@@ -3,35 +3,35 @@ export const SidebarData = [
     {
         title: 'Collection',
         path: '/Collection',
-        cName: 'many products'
+        cName: 'item-text'
     },
 
     {
         title: 'Collection',
         path: '/Collection',
-        cName: 'many products'
+        cName: 'item-text'
     },
 
     {
         title: 'Men',
         path: '/Men',
-        cName: 'mens products'
+        cName: 'item-text'
     },
 
     {
         title: 'Women',
         path: '/Women',
-        cName: 'Women products'
+        cName: 'item-text'
     },
     {
         title: 'About',
         path: '/About',
-        cName: 'About products'
+        cName: 'item-text'
     },
     {
         title: 'Contact',
         path: '/Contact',
-        cName: 'Contact'
+        cName: 'item-text'
     }
 
 ]
