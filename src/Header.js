@@ -1,45 +1,36 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import img from "/home/stephen/ecommerce-product-page-main/src/image-avatar.png";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import "./Header.css";
-import {Link} from 'react-router-dom'
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
 import { SidebarData } from "./Sidebar";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import "./Header.css";
 const Header = () => {
-const[list, setList] = useState(false)
-   const showlist = () => setList(!list)
+  const [list, setList] = useState(false);
+  const showlist = () => setList(!list);
   return (
-    <div className="header">
-      <Link to="#" className="menu-bars">
-      <div>
-        <MenuIcon  onClick = {showlist}/>
+    <nav className="navbarItems">
+      <h1 className="navbar-logo">Sneakers</h1>
+      <div className="menu-icon" onClick={showlist} >
+        { list ? <MenuIcon /> : <CloseIcon />}
       </div>
-      
-      </Link>
-
-      <div className="header_optionOne">
-        <div className="logo">Sneakers</div>
-        <div className={list ? 'nav-menu.active': 'nav-menu' }>
-          <Link className="menu-bars"  onClick = {showlist}>
-          <CloseIcon  />
-          </Link>
-         {SidebarData.map((item, index) =>{
-           return(
-             <span key ={index} className ={item.cName}>
-               <Link to={item.path}>
-                 {item.title}
-               </Link>
-             </span>
-           )
-         })}
-        </div>
-      </div>
-      <div className="header_optionTwo">
-        <ShoppingCartIcon />
+      <ul className={list ? "nav-menu.active" : "nav-menu"}>
+        {SidebarData.map((items, index) => {
+          return (
+            <Link to={items.path}>
+              <li key={index} className={items.cName}>
+                {items.title}
+              </li>
+            </Link>
+          );
+        })}
+      </ul>
+      <div className="navbar-optionThree">
+        <ShoppingCartIcon className="shopping-icon" />
         <img className="header_img" src={img} alt="" />
       </div>
-    </div>
+    </nav>
   );
 };
 
