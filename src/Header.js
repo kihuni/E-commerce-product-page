@@ -12,8 +12,8 @@ const Header = () => {
   return (
     <nav className="navbarItems">
       <h1 className="navbar-logo">Sneakers</h1>
-      <div className="menu-icon" onClick={showlist} >
-        { list ? <MenuIcon /> : <CloseIcon />}
+      <div className="menu-icon" onClick={showlist}>
+        {list ? <MenuIcon /> : <CloseIcon />}
       </div>
       <ul className={list ? "nav-menu.active" : "nav-menu"}>
         {SidebarData.map((items, index) => {

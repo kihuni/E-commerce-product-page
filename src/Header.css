@@ -74,6 +74,8 @@
     top: 0;
     left: 0;
     transform: translate(-100%, 60%);
+    font-size: large;
+    color: white;
   }
   .navbar-logo{
     left:0;
