@@ -9,6 +9,7 @@
   object-fit: contain;
   width: 30%;
   height: 100px;
+  margin-left: 20px;
 }
 .navbar-logo {
   justify-self: start;
@@ -46,9 +47,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.shopping-icon {
-  margin-right: 20px;
-}
+
 
 @media (max-width: 570px) {
   .navbarItems {

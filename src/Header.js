@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import img from "/home/stephen/ecommerce-product-page-main/src/image-avatar.png";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';import { Link } from "react-router-dom";
 import Badge from '@mui/material/Badge';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';import { Link } from "react-router-dom";
+
 import { SidebarData } from "./Sidebar";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -28,8 +29,9 @@ const Header = ({showCart}) => {
       </ul>
       <div className="navbar-optionThree">
       <Badge badgeContent={4} color="success">
-    <ShoppingCartOutlinedIcon className="shopping-icon" onClick ={showCart}/>
+      <ShoppingCartOutlinedIcon className="shopping-icon" onClick ={showCart}/>
     </Badge>
+
         <img className="header_img" src={img} alt="" />
       </div>
     </nav>
