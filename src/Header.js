@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import img from "/home/stephen/ecommerce-product-page-main/src/image-avatar.png";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Link } from "react-router-dom";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';import { Link } from "react-router-dom";
+import Badge from '@mui/material/Badge';
 import { SidebarData } from "./Sidebar";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Header.css";
-const Header = () => {
+const Header = ({showCart}) => {
   const [list, setList] = useState(false);
   const showlist = () => setList(!list);
   return (
@@ -27,7 +27,9 @@ const Header = () => {
         })}
       </ul>
       <div className="navbar-optionThree">
-        <ShoppingCartIcon className="shopping-icon" />
+      <Badge badgeContent={4} color="success">
+    <ShoppingCartOutlinedIcon className="shopping-icon" onClick ={showCart}/>
+    </Badge>
         <img className="header_img" src={img} alt="" />
       </div>
     </nav>
