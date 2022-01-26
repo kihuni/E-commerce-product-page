@@ -15,14 +15,14 @@ const Header = () => {
       <div className="menu-icon" onClick={showlist}>
         {list ? <CloseIcon /> : <MenuIcon />}
       </div>
-      <ul className={list ? "nav-menu.active" : "nav-menu"}>
+      <ul className={list ? "nav-menu active" : "nav-menu"}>
         {SidebarData.map((items, index) => {
           return (
-            <Link to={items.path}>
-              <li key={index} className={items.cName}>
+            <li key={index}>
+              <Link to={items.path} className="items.cName">
                 {items.title}
-              </li>
-            </Link>
+              </Link>
+            </li>
           );
         })}
       </ul>
