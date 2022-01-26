@@ -1,0 +1,47 @@
+.main{
+   width: 70%;
+   margin: auto;  
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px;
+   padding-top: 50px;
+   padding-right: 40px;
+}
+
+.img-main{
+    height: 300px;
+    object-fit: contain;
+    width: auto;
+    border-radius: 10px;
+}
+.side-items{
+width: 30%;
+margin-left: 100px;
+}
+h6{
+    color:  orange;
+}
+
+h2{
+    padding: 10px 0;
+}
+p{
+    padding-top: 10px;
+    color: hsl(219, 9%, 45%)
+}
+
+@media (max-width: 570px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-main{
+        width: 100%;
+    }
+    .side-items{
+        width: 100%;
+        padding-top: 10px;
+    }
+}

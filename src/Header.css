@@ -34,9 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  padding-right: 50px;
 }
 .item-sidebar {
   text-decoration: none;
+  color: hsl(219, 9%, 45%);
 }
 
 .item-sidebar:hover {
@@ -56,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 50%;
     height: 500px;
     position: absolute;
     top: 80px;
@@ -64,9 +66,10 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    text-align: center;
   }
   .nav-menu.active {
-    background: #6668f4;
+    background: hsl(0, 0%, 100%);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -77,6 +80,7 @@
     padding: 2rem;
     width: 50%;
     display: table;
+    padding-left: 20px;
   }
   .menu-icon {
     display: block;

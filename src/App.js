@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './Header'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import MainSection from './MainSection'
+
 const App = () => {
   return (
     <div>
@@ -10,7 +12,7 @@ const App = () => {
          <Route path='/' />
        </Switch>
       </Router>
-
+        <MainSection />
     </div>
   )
 }
