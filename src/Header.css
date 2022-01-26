@@ -95,7 +95,8 @@
     padding-left: 15px;
   }
   .navbar-optionThree {
-    right: 0;
+   
     position: absolute;
+    margin-left: 340px;
   }
 }
