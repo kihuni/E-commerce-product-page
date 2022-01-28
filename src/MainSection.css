@@ -12,19 +12,23 @@
 .img-main {
   height: 300px;
   object-fit: contain;
-  width: auto;
+
   border-radius: 10px;
+  flex: 1;
 }
 .side-items {
-  width: 30%;
   margin-left: 100px;
+  flex: 1;
+}
+.dormat {
+  flex: 1;
 }
 
 h6 {
   color: orange;
 }
 
-h2 {
+h1 {
   padding: 10px 0;
 }
 p {
@@ -39,9 +43,68 @@ p {
   margin-right: 10px;
 }
 .first-discount {
-  padding-right: 10px;
+  flex: 2;
+  font-weight: bold;
+  color: black;
 }
-
+.second-discount {
+  flex: 1;
+  color: hsl(26, 100%, 55%);
+  padding-right: 40px;
+}
+.dashed-discount {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: line-through;
+}
+.add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minus {
+  color: hsl(26, 100%, 55%);
+  cursor: pointer;
+  flex: 1;
+}
+.num {
+  flex: 0;
+  padding-left: 10px;
+}
+.add {
+  padding-left: 10px;
+  color: hsl(26, 100%, 55%);
+  cursor: pointer;
+  flex: 1;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  padding-right: 10px;
+  background-color: hsl(0, 0%, 95%);
+}
+button {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 50px;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  cursor: pointer;
+}
+.cart-1 {
+  flex: 1;
+  color: #fff;
+}
+.cart-2 {
+  flex: 3;
+  padding-left: 10px;
+  color: #fff;
+}
 @media (max-width: 700px) {
   .main {
     display: flex;
@@ -58,5 +121,22 @@ p {
   .side-items {
     width: 100%;
     padding-top: 20px;
+  }
+  .add-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .icons {
+    display: flex;
+    width: 100%;
+  }
+  .minus {
+    left: 0;
+  }
+  .button {
+    width: 100%;
   }
 }

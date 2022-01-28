@@ -12,29 +12,33 @@ const MainSection = () => {
 
       <div className="side-items">
         <h6>SNEAKER COMPANY</h6>
-        <h2>
+        <h1>
           Fall Limited Edition <span>Sneakers</span>
-        </h2>
+        </h1>
         <p>
           These low-profile sneakers are your perfect casual wear companion.
           Feature a durable rubber outer sole, they'll withstand everything the
           weather can offer.
         </p>
         <div className="discount">
-          <p className="first-discount">$125.00</p>
-          <p className="second-discount">50%</p>
+          <h1 className="first-discount">$125.00</h1>
+          <h3 className="second-discount">50%</h3>
         </div>
-        <p>$250.00</p>
+        <p className="dashed-discount">$250.00</p>
         <div className="add-cart">
-          <RemoveIcon />
-          <span>0</span>
-          <AddIcon />
+          <div className="icons">
+            <RemoveIcon className="minus" />
+            <span className="num">0</span>
+            <AddIcon className="add" />
+          </div>
+
           <button>
-            <ShoppingCartOutlinedIcon />
-            Add to cart
+            <ShoppingCartOutlinedIcon className="cart-1" />
+            <span className="cart-2">Add to cart</span>
           </button>
         </div>
       </div>
+      <div className="dormat"></div>
     </div>
   );
 };
