@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .header_img {
   object-fit: contain;
@@ -27,6 +26,10 @@
   justify-content: start;
   margin-left: 2rem;
 }
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
 .menu-icon {
   display: none;
 }
@@ -47,8 +50,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-
-
 @media (max-width: 570px) {
   .navbarItems {
     position: relative;
@@ -66,6 +67,9 @@
     opacity: 1;
     transition: all 0.5s ease;
     text-align: center;
+  }
+  .nav-menu a {
+    padding-left: 10px;
   }
   .nav-menu.active {
     background: hsl(0, 0%, 100%);
@@ -94,7 +98,6 @@
     padding-left: 15px;
   }
   .navbar-optionThree {
-   
     position: absolute;
     margin-left: 340px;
   }

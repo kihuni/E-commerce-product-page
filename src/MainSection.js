@@ -3,13 +3,22 @@ import "./MainSection.css";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { Link } from "react-router-dom";
-
+import img1 from "/home/stephen/ecommerce-product-page-main/src/images/image-product-1-thumbnail.jpg"
+import img2 from '/home/stephen/ecommerce-product-page-main/src/images/image-product-2-thumbnail.jpg'
+import img3 from '/home/stephen/ecommerce-product-page-main/src/images/image-product-3-thumbnail.jpg'
+import img4 from '/home/stephen/ecommerce-product-page-main/src/images/image-product-4-thumbnail.jpg'
 const MainSection = () => {
   return (
     <div className="main">
+      <div className="images">
       <img className="img-main" src={img} alt="" />
-
+         <div className="img-small">
+           <img className="img1" src={img1} alt="" />
+           <img className="img2" src={img2} alt="" />
+           <img className="img3" src={img3} alt="" />
+           <img className="img4" src={img4} alt="" />
+         </div>
+         </div>
       <div className="side-items">
         <h6>SNEAKER COMPANY</h6>
         <h1>
