@@ -7,7 +7,7 @@ import { SidebarData } from "./Sidebar";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Header.css";
-const Header = ({showCart}) => {
+const Header = ({showCart, itemCount}) => {
   const [list, setList] = useState(false);
   const showlist = () => setList(!list);
   return (
@@ -28,7 +28,7 @@ const Header = ({showCart}) => {
         })}
       </ul>
       <div className="navbar-optionThree">
-      <Badge badgeContent={4} color="success">
+      <Badge badgeContent={4} color="success" badgeContent={itemCount} >
       <ShoppingCartOutlinedIcon className="shopping-icon" onClick ={showCart}/>
     </Badge>
 

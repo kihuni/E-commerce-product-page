@@ -101,4 +101,9 @@
     position: absolute;
     margin-left: 340px;
   }
+  .header_img {
+    object-fit: contain;
+    width: 40px;
+    height: auto;
+  }
 }
